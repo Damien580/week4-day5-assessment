@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back End Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Spice Inventory</h1>
+    </header>
+    <main>
+        <br>
+        <button>Get Spices</button>
+
+        <form>
+            <input 
+            type='text'
+            id="name"
+            placeholder="Spice name"/>
+            <input 
+            type='text'
+            id="flavor"
+            placeholder='flavor'/>
+            <input 
+            type='text'
+            id="img"
+            placeholder='Paste an image URL'/>
+            <button>Add Spice</button>
+            
+        </form>
+        
+        <section id="spices-container"></section>
+
+
+</main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
