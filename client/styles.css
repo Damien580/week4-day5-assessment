@@ -1,5 +1,6 @@
 *{
     margin: 0px;
+    padding: 0px;
 }
 
 body{
@@ -12,5 +13,11 @@ header{
     height: 10vh;
     font-size:50px;
     color: #d2d0bc;
+}
+
+form{
+    
+    text-align: right;
+    
 }
 

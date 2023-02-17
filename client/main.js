@@ -35,7 +35,7 @@ const createSpiceCard = spice =>{
     spiceCard.classList.add('spice-card')
 
     spiceCard.innerHTML = `<img alt='spice cover image' src=${spice.imageURL} class="spice-cover-image"/>
-    <p class="spice">${spice.name}<p>
+    <p class="spice">${spice.name}, ${spice.flavor}<p>
     <div class="btns-container">
         <button onclick="deleteSpice(${spice.id})">delete</button>
         `
