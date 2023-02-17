@@ -23,7 +23,7 @@ function submitHandler(e){
         imageURL: imageURL.value
     }
 
-    createSpice(bodyObj)
+    addSpice(bodyObj)
 
     name.value = ''
     flavor.value = ''
