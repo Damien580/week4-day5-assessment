@@ -42,7 +42,7 @@ const createSpiceCard = spice =>{
         <p class="spice-stock">${spice.stock}</p>
         <button onclick="updateSpice(${spice.id}, 'plus')">+</button>
     </div>
-        <button onclick="deleteSpice(${spice.id})">delete</button>
+        <button onclick="deleteSpice(${spice.id})">DELETE</button>
         `
 
         spicesContainer.appendChild(spiceCard)
