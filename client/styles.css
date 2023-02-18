@@ -6,7 +6,7 @@
 body{
     background-image: radial-gradient(#08403f, #748d69);
     background-repeat: no-repeat;
-    height: 100vh   ;
+    background-size: cover;
 }
 header{
     text-align: center;
@@ -17,9 +17,61 @@ header{
     color: #d2d0bc;
 }
 
+main{
+}
+
 form{
     
-    text-align: right;
+    text-align: center;
+    flex-direction: column;
+    width: 100px;
+    position: sticky;
+    top: 250px;
+    left:40vw;
+    justify-content:space-evenly;
+    margin-top: 10px
     
 }
 
+.spices-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100px;
+    
+}
+
+#radio-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+  .spice-cover-image {
+    height: 20vh;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .spice-card {
+    background-color:#faebae;
+    width: 10vw;
+    margin: 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .spice-flavor {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .spice-stock {
+    font-size: 30px;
+    margin: 5px 0;
+  }

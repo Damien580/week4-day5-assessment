@@ -37,7 +37,7 @@ const createSpiceCard = spice =>{
 
     spiceCard.innerHTML = `<img alt='spice cover image' src=${spice.imageURL} class="spice-cover-image"/>
     <p class="spice">${spice.name}, ${spice.flavor}<p>
-    <div class="btns-container">
+    <div class="spices-container">
         <button onclick="updateSpice(${spice.id}, 'minus')">-</button>
         <p class="spice-stock">${spice.stock}</p>
         <button onclick="updateSpice(${spice.id}, 'plus')">+</button>
