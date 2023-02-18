@@ -5,6 +5,8 @@
 
 body{
     background-image: radial-gradient(#08403f, #748d69);
+    background-repeat: no-repeat;
+    height: 100vh   ;
 }
 header{
     text-align: center;

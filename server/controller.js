@@ -19,6 +19,21 @@ module.exports = {
         let index = spiceData.findIndex(spices => spices.id === +id)
         spiceData.splice(index, 1)
         res.status(200).send(spiceData)
+    },
+
+    updateSpices: (req, res) => {
+        console.log(req.body)
+        console.log(req.params)
+        let { type } = req.body
+        let { id } = req.params
+        let index = spiceData.findIndex(spices => spices.id === +id)
+        if (type === "minus" && spiceData[index].stock > 0){
+            spiceData[index].stock -= 1
+
+        } else if (type === "plus" && spiceData[index].stock < 50){
+            spiceData[index].stock += 1
+        }
+        res.status(200).send(spiceData)
     }
 
 }

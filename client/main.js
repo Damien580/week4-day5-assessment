@@ -9,6 +9,7 @@ const errCallback = err => console.log(err)
 const getAllSpices = () => axios.get(baseURL).then(spicesCallback).catch(errCallback)
 const addSpice = body => axios.post(baseURL, body).then(spicesCallback).catch(errCallback)
 const deleteSpice = id => axios.delete(`${baseURL}/${id}`).then(spicesCallback).catch(errCallback)
+const updateSpice = (id, type) => axios.put(`${baseURL}/${id}`, {type}).then(spicesCallback).catch(errCallback)
 
 function submitHandler(e){
     e.preventDefault()
@@ -37,6 +38,10 @@ const createSpiceCard = spice =>{
     spiceCard.innerHTML = `<img alt='spice cover image' src=${spice.imageURL} class="spice-cover-image"/>
     <p class="spice">${spice.name}, ${spice.flavor}<p>
     <div class="btns-container">
+        <button onclick="updateSpice(${spice.id}, 'minus')">-</button>
+        <p class="spice-stock">${spice.stock}</p>
+        <button onclick="updateSpice(${spice.id}, 'plus')">+</button>
+    </div>
         <button onclick="deleteSpice(${spice.id})">delete</button>
         `
 
