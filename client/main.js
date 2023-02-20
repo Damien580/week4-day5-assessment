@@ -16,11 +16,13 @@ function submitHandler(e){
 
     let name = document.querySelector('#name')
     let flavor = document.querySelector('#flavor')
+    let stock = document.querySelector('#stock')
     let imageURL = document.querySelector('#img')
 
     let bodyObj = {
         name: name.value,
         flavor: flavor.value,
+        stock: stock.value,
         imageURL: imageURL.value
     }
 
@@ -28,6 +30,7 @@ function submitHandler(e){
 
     name.value = ''
     flavor.value = ''
+    stock.value = ''
     imageURL.value = ''
 }
 
